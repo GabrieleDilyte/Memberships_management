@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+nav {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 1px 3px #b8b8b8;
+  background-color: white;
+}
+nav > a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+  margin: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+nav > a:hover {
+  color: rgb(118, 133, 218);
+}
+a.selected {
+  color: rgb(101, 115, 194);
+}
+h1 {
+  color: rgb(77, 85, 97);
+}
+button {
+  background-color: rgb(101, 115, 194);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 20px;
+  padding: 8px 15px;
+  margin: 20px 5px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  text-align: center;
+}
+button:hover {
+  background-color: rgb(118, 133, 218);
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(219, 226, 235);
+}
+.container {
+  margin: 0 100px;
+  min-height: 80vh;
+}
+button > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+}
+#memberships,
+#users {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.singleMembership {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.singleUser {
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.singleUser h2 {
+  font-size: 18px;
+  color: rgb(152, 151, 155);
+  margin-bottom: 20px;
+}
+#sort {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+form {
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+}
+form > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input,
+textarea,
+select {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 30%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 10px;
+}
+#cancelButton,
+#cancelButton a {
+  background-color: white;
+  color: black;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+}

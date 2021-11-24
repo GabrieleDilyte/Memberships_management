@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Cormorant+Garamond:wght@300&family=Outfit:wght@300&family=Yantramanav:wght@300&family=Zen+Old+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <title>Add Users</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./membership.html">Memberships</a>
+      <a href="./users.html">Users</a>
+    </nav>
+    <main>
+      <div class="container">
+        <section class="topSection">
+          <h1>Create User</h1>
+        </section>
+        <section id="createUser">
+          <form>
+            <div>
+              <label for="name">First Name:</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="surname">Last Name:</label>
+              <input
+                id="surname"
+                type="text"
+                name="surname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email Address:</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <div>
+              <label for="membership">Change Membership:</label>
+              <select id="membership" name="membership" required></select>
+            </div>
+            <button id="cancelButton"><a href="users.html">Cancel</a></button>
+            <button id="addButton">New User</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright ©2021 Membership Manager</p>
+    </footer>
+    <script src="JS/usersAdd.js"></script>
+  </body>
+</html>
